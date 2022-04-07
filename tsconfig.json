@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "paths": {
+      "*": ["src/*"]
+    },
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "strict": true,
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "esnext",
+    "moduleResolution": "Node",
+    "strictPropertyInitialization": false,
+  }
+} 

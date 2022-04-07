@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+    db:
+      image: mongo:latest
+      ports:
+        - "27017:27017"
+      volumes:
+        - ~/.data:/data/db
+      restart: always
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=root
+        - MONGO_INITDB_DATABASE=test
+        - MONGO_URI=mongodb://root:root@localhost:27017/test
